@@ -22,7 +22,7 @@ function draw() {
   background("black");
   if(hasCollided(bullet,wall))
   {bullet.setVelocity(0,0)
-  damage=0.5*speed*speed*weight/thickness*thickness*thickness
+  damage=0.5*speed*speed*weight/(thickness*thickness*thickness)
   if(damage>10){
     wall.shapeColor="red"
   }    
